@@ -67,3 +67,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 # JsonPlaceHolder-React-App
+yarn add v1.21.1
+[1/4] Resolving packages...
+info Visit https://yarnpkg.com/en/docs/cli/add for documentation about this command.
