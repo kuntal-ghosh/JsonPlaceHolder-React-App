@@ -110,10 +110,7 @@ function Appbar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Persistent drawer
-          </Typography>
-          <Typography variant="h6" noWrap>
-            Persistent drawer
+            Post App
           </Typography>
         </Toolbar>
       </AppBar>
@@ -164,7 +161,6 @@ function Appbar() {
         })}
       >
         <div className={classes.drawerHeader} />
-
       </main>
     </div>
   );
