@@ -8,7 +8,10 @@ const Posts = (props) => {
   return (
     <>
       <div styles="text-align:center;display:flex; justify-content:center ">
-        {posts && posts.map((post) => <Post key={post.id} post={post}></Post>)}
+        {posts &&
+          posts.map((post) => (
+            <Post key={post.id} post={post} showDetailButton={true}></Post>
+          ))}
       </div>
     </>
   );

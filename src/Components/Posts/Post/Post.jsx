@@ -66,7 +66,7 @@ function Post(props) {
           to={`/posts/${id}`}
           style={{ outline: "none", textDecoration: "none" }}
         >
-          <Button size="small">Learn More</Button>
+          {props.showDetailButton && <Button size="small">Details</Button>}
         </Link>
       </CardActions>
     </Card>
