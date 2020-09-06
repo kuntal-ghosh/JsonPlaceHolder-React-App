@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
-    maxWidth: 500,
+    maxWidth: 700,
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -58,7 +58,7 @@ function Post(props) {
           {/* well meaning and kindly. */}
           {body}
           <br />
-          {'"a benevolent smile"'}
+          {/* {'"a benevolent smile"'} */}
         </Typography>
       </CardContent>
       <CardActions>

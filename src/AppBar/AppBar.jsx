@@ -18,6 +18,9 @@ import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 import { Link } from "react-router-dom";
+import { display } from "@material-ui/system";
+import Hidden from "@material-ui/core/Hidden";
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -120,19 +123,20 @@ function Appbar() {
               Post App
             </Typography>
           </Link>
-
-          <Link
-            to="/posts"
-            style={{
-              textDecoration: "none",
-              color: "white",
-              marginLeft: "100px",
-            }}
-          >
-            <Typography variant="h6" noWrap>
-              Posts
-            </Typography>
-          </Link>
+          <Hidden smDown>
+            <Link
+              to="/posts"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                marginLeft: "100px",
+              }}
+            >
+              <Typography variant="h6" noWrap>
+                Posts
+              </Typography>
+            </Link>
+          </Hidden>
         </Toolbar>
       </AppBar>
       <Drawer
