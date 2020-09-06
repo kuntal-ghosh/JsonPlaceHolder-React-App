@@ -5,6 +5,8 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { Avatar } from "@material-ui/core";
+import logo from "../../../../../logo192.png";
 
 const useStyles = makeStyles({
   root: {
@@ -18,6 +20,13 @@ const useStyles = makeStyles({
     margin: "0 auto",
     marginBottom: "20px",
   },
+  card: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+
   bullet: {
     display: "inline-block",
     margin: "0 2px",
@@ -37,7 +46,9 @@ const Comment = (props) => {
   const bull = <span className={classes.bullet}>•</span>;
   return (
     <Card className={classes.root} variant="outlined">
-      <CardContent>
+      <CardContent className={classes.card}>
+        <Avatar alt="Remy Sharp" src={logo} />
+
         <Typography
           className={classes.title}
           color="textSecondary"
